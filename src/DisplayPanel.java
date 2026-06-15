@@ -293,21 +293,15 @@ public class DisplayPanel extends JPanel implements MouseListener, KeyListener, 
     }
 
     private void moveEnemies() {
-
         for (int i = 0; i < enemyXs.size(); i++) {
-
             double enemyX = enemyXs.get(i);
             double enemyY = enemyYs.get(i);
-
             double dx = playerX - enemyX;
             double dy = playerY - enemyY;
-
             double distance = Math.sqrt(dx * dx + dy * dy);
 
             if (distance > 0) {
-
                 double speed = 2.0 + (double) level / 8;
-
                 enemyX += dx / distance * speed;
                 enemyY += dy / distance * speed;
             }
