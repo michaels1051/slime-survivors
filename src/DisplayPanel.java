@@ -189,7 +189,7 @@ public class DisplayPanel extends JPanel implements MouseListener, KeyListener, 
             g.fillRect(0, 0, getWidth(), getHeight());
             g.setColor(Color.RED);
             g.setFont(new Font("Arial", Font.BOLD, 56));
-            g.drawString("GAME OVER", getWidth() / 2 - 190, 180);
+            g.drawString("GAME OVER", getWidth() / 2 - 155, 180);
             g.setColor(Color.WHITE);
             g.setFont(new Font("Arial", Font.BOLD, 24));
             g.drawString("You reached Level " + level, getWidth() / 2 - 90, 240);
